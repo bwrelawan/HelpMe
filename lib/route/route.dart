@@ -1,12 +1,19 @@
 import 'package:get/get.dart';
+import 'package:helpme/module/detail_article/detail_article_screen.dart';
+import 'package:helpme/module/entry_data/entry_screen.dart';
 import 'package:helpme/route/route_constant.dart';
 
 import '../module/home/home_screen.dart';
-import '../module/search/search_screen.dart';
+import '../module/list_article/list_article_screen.dart';
 
 class AppRoute {
   static final all = [
-    GetPage(name: RouteConstant.home, page: () => HomeScreen()),
-    GetPage(name: RouteConstant.search, page: () => SearchScreen()),
+    GetPage(name: RouteConstant.home, page: () => const HomeScreen()),
+    GetPage(
+        name: RouteConstant.listArticle, page: () => const ListArticleScreen()),
+    GetPage(
+        name: RouteConstant.detailArticle,
+        page: () => const DetailArticleScreen()),
+    GetPage(name: RouteConstant.entryData, page: () => const EntryData()),
   ];
 }

@@ -1,4 +1,6 @@
 class RouteConstant {
   static const home = '/home';
-  static const search = '/search';
+  static const listArticle = '/listArticle';
+  static const detailArticle = '/detailArticle';
+  static const entryData = '/entryData';
 }
